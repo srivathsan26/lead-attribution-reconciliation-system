@@ -87,9 +87,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       >
         {/* Brand Header */}
         <div className="h-16 flex items-center px-6 border-b border-white/10 gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-cyan-400 flex items-center justify-center shadow-[0_0_20px_rgba(34,211,238,0.35)] border border-white/20">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
+          <img 
+            src="/assets/images/logo.svg" 
+            alt="LeadSync Logo" 
+            className="w-9 h-9 rounded-xl shadow-[0_0_20px_rgba(34,211,238,0.35)]"
+          />
           <div>
             <div className="font-bold text-base tracking-tight text-white flex items-center gap-1.5">
               LeadSync
