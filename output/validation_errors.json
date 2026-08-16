@@ -1,0 +1,74 @@
+[
+  {
+    "event_id": "evt-bad-01",
+    "error_type": "MISSING_LEAD_IDENTITY",
+    "field": "email/phone/lead_id",
+    "message": "Event must contain at least one usable identifier (email, phone, or lead_id).",
+    "raw_record": {
+      "event_id": "evt-bad-01",
+      "lead_id": "",
+      "email": "",
+      "phone": "",
+      "name": "Ghost User",
+      "source": "social",
+      "campaign": "ghost-campaign",
+      "event_type": "page_visit",
+      "timestamp": "2026-08-05T10:00:00Z",
+      "status": "new"
+    }
+  },
+  {
+    "event_id": "evt-bad-02",
+    "error_type": "INVALID_TIMESTAMP",
+    "field": "timestamp",
+    "message": "Timestamp \"INVALID_DATE_STRING_2026\" is not a valid ISO-8601 date string.",
+    "raw_record": {
+      "event_id": "evt-bad-02",
+      "lead_id": "lead-bad-ts",
+      "email": "bad.time@example.com",
+      "phone": "+15559990000",
+      "name": "Bad Timestamp",
+      "source": "paid_search",
+      "campaign": "google-ads-q3",
+      "event_type": "form_submission",
+      "timestamp": "INVALID_DATE_STRING_2026",
+      "status": "new"
+    }
+  },
+  {
+    "event_id": "evt-bad-03",
+    "error_type": "INVALID_SOURCE",
+    "field": "source",
+    "message": "Source \"telegram_bot\" is unsupported. Supported sources: organic_search, paid_search, social, email, website, manual.",
+    "raw_record": {
+      "event_id": "evt-bad-03",
+      "lead_id": "lead-bad-src",
+      "email": "bad.source@example.com",
+      "phone": "+15559991111",
+      "name": "Bad Source",
+      "source": "telegram_bot",
+      "campaign": "telegram-promo",
+      "event_type": "form_submission",
+      "timestamp": "2026-08-05T10:00:00Z",
+      "status": "new"
+    }
+  },
+  {
+    "event_id": "evt-bad-04",
+    "error_type": "INVALID_EVENT_TYPE",
+    "field": "event_type",
+    "message": "Event type \"teleportation_scan\" is unsupported. Supported types: page_visit, campaign_click, form_submission, email_open, email_click, contacted, qualified, converted, lost.",
+    "raw_record": {
+      "event_id": "evt-bad-04",
+      "lead_id": "lead-bad-type",
+      "email": "bad.type@example.com",
+      "phone": "+15559992222",
+      "name": "Bad Event Type",
+      "source": "organic_search",
+      "campaign": "seo-growth-2026",
+      "event_type": "teleportation_scan",
+      "timestamp": "2026-08-05T10:00:00Z",
+      "status": "new"
+    }
+  }
+]

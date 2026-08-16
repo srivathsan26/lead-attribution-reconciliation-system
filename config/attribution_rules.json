@@ -1,0 +1,68 @@
+{
+  "attribution": {
+    "rules": [
+      {
+        "id": "rule_1_conversion_campaign",
+        "name": "Conversion Event Campaign",
+        "description": "If a valid conversion event contains a non-empty campaign ID, attribute to that campaign.",
+        "priority": 1
+      },
+      {
+        "id": "rule_2_pre_qualification",
+        "name": "Pre-Qualification Campaign Interaction",
+        "description": "If no conversion campaign exists, select the latest valid campaign interaction occurring before or at qualification.",
+        "priority": 2
+      },
+      {
+        "id": "rule_3_source_precedence",
+        "name": "Source Precedence Tie-Break",
+        "description": "If competing campaign interactions have the exact same relevant timestamp, use configured source precedence.",
+        "priority": 3
+      },
+      {
+        "id": "rule_4_lexicographic_tie_break",
+        "name": "Lexicographic Campaign Tie-Break",
+        "description": "If all attribution evidence remains tied, select the lexicographically smallest campaign ID.",
+        "priority": 4
+      }
+    ],
+    "source_precedence": [
+      "organic_search",
+      "paid_search",
+      "email",
+      "social",
+      "website",
+      "manual"
+    ]
+  },
+  "states": {
+    "supported_states": ["New", "Contacted", "Qualified", "Converted", "Lost"],
+    "progression_order": {
+      "New": 1,
+      "Contacted": 2,
+      "Qualified": 3,
+      "Converted": 4,
+      "Lost": 0
+    },
+    "forbidden_transitions": [
+      {"from": "Converted", "to": "New"},
+      {"from": "Qualified", "to": "New"},
+      {"from": "Lost", "to": "Converted"},
+      {"from": "Converted", "to": "Contacted"},
+      {"from": "Converted", "to": "Qualified"}
+    ]
+  },
+  "scoring": {
+    "form_submission": 20,
+    "email_click": 15,
+    "email_open": 10,
+    "campaign_click": 15,
+    "phone_provided": 10,
+    "qualified": 20,
+    "converted": 20,
+    "tier_thresholds": {
+      "high": 70,
+      "medium": 40
+    }
+  }
+}

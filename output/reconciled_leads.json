@@ -1,0 +1,567 @@
+[
+  {
+    "lead_id": "lead-101",
+    "canonical_email": "sarah.connor@cyberdyne.org",
+    "phone": "+15550192834",
+    "name": "Sarah Connor",
+    "current_state": "Converted",
+    "attributed_campaign": "enterprise-checkout-summer",
+    "attributed_source": "website",
+    "attribution_explanation": {
+      "selected_campaign": "enterprise-checkout-summer",
+      "selected_source": "website",
+      "rule_applied": "Rule 1: Conversion Event Campaign",
+      "reason": "Conversion event evt-006 was directly associated with campaign \"enterprise-checkout-summer\". Under Rule 1, the converting touchpoint takes primary attribution.",
+      "candidate_campaigns": [
+        "enterprise-checkout-summer",
+        "google-ads-q3",
+        "nurture-enterprise-01",
+        "random-newsletter",
+        "seo-growth-2026"
+      ],
+      "conversion_event_id": "evt-006"
+    },
+    "duplicate_count": 6,
+    "interaction_count": 7,
+    "has_conflict": true,
+    "conflicts": [
+      {
+        "event_id": "evt-007",
+        "attempted_transition": "Converted -> New",
+        "current_state": "Converted",
+        "timestamp": "2026-08-14T10:00:00.000Z",
+        "reason": "Invalid state regression from \"Converted\" to \"New\" attempted by event evt-007 (page_visit at 2026-08-14T10:00:00.000Z). State retained as \"Converted\"."
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "evt-001",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-10T09:00:00.000Z",
+        "campaign": "seo-growth-2026",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-002",
+        "event_type": "campaign_click",
+        "timestamp": "2026-08-10T09:15:00.000Z",
+        "campaign": "google-ads-q3",
+        "source": "paid_search",
+        "status": "new",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "5550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-003",
+        "event_type": "form_submission",
+        "timestamp": "2026-08-10T09:20:00.000Z",
+        "campaign": "google-ads-q3",
+        "source": "paid_search",
+        "status": "new",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-004",
+        "event_type": "email_click",
+        "timestamp": "2026-08-11T14:30:00.000Z",
+        "campaign": "nurture-enterprise-01",
+        "source": "email",
+        "status": "contacted",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-005",
+        "event_type": "qualified",
+        "timestamp": "2026-08-12T11:00:00.000Z",
+        "campaign": "",
+        "source": "manual",
+        "status": "qualified",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-006",
+        "event_type": "converted",
+        "timestamp": "2026-08-13T16:45:00.000Z",
+        "campaign": "enterprise-checkout-summer",
+        "source": "website",
+        "status": "converted",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-007",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-14T10:00:00.000Z",
+        "campaign": "random-newsletter",
+        "source": "website",
+        "status": "new",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.org",
+        "phone": "+15550192834",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-001",
+      "evt-002",
+      "evt-003",
+      "evt-004",
+      "evt-005",
+      "evt-006",
+      "evt-007"
+    ],
+    "score": {
+      "score": 100,
+      "tier": "High",
+      "breakdown": {
+        "form_submission": 20,
+        "email_clicks": 15,
+        "email_opens": 0,
+        "campaign_clicks": 15,
+        "phone_provided": 10,
+        "qualified": 20,
+        "converted": 20,
+        "interaction_density": 10
+      }
+    },
+    "first_seen": "2026-08-10T09:00:00.000Z",
+    "last_seen": "2026-08-14T10:00:00.000Z"
+  },
+  {
+    "lead_id": "lead-202",
+    "canonical_email": "rajesh.kumar@techcorp.in",
+    "phone": "+919876543210",
+    "name": "Rajesh Kumar",
+    "current_state": "Converted",
+    "attributed_campaign": "linkedin-lead-gen-apac",
+    "attributed_source": "social",
+    "attribution_explanation": {
+      "selected_campaign": "linkedin-lead-gen-apac",
+      "selected_source": "social",
+      "rule_applied": "Rule 2: Pre-Qualification Interaction",
+      "reason": "No conversion campaign existed. Campaign \"linkedin-lead-gen-apac\" was selected as the latest valid interaction before lead qualification (event evt-012 at 2026-08-12T09:30:00.000Z).",
+      "candidate_campaigns": [
+        "linkedin-lead-gen-apac"
+      ],
+      "qualifying_event_id": "evt-012"
+    },
+    "duplicate_count": 3,
+    "interaction_count": 4,
+    "has_conflict": false,
+    "conflicts": [],
+    "timeline": [
+      {
+        "event_id": "evt-010",
+        "event_type": "form_submission",
+        "timestamp": "2026-08-11T08:00:00.000Z",
+        "campaign": "linkedin-lead-gen-apac",
+        "source": "social",
+        "status": "new",
+        "name": "Rajesh Kumar",
+        "email": "",
+        "phone": "+919876543210",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-011",
+        "event_type": "contacted",
+        "timestamp": "2026-08-11T12:00:00.000Z",
+        "campaign": "linkedin-lead-gen-apac",
+        "source": "social",
+        "status": "contacted",
+        "name": "Rajesh Kumar",
+        "email": "rajesh.kumar@techcorp.in",
+        "phone": "+919876543210",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-012",
+        "event_type": "qualified",
+        "timestamp": "2026-08-12T09:30:00.000Z",
+        "campaign": "linkedin-lead-gen-apac",
+        "source": "social",
+        "status": "qualified",
+        "name": "Rajesh Kumar",
+        "email": "rajesh.kumar@techcorp.in",
+        "phone": "+919876543210",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-013",
+        "event_type": "converted",
+        "timestamp": "2026-08-14T15:00:00.000Z",
+        "campaign": "",
+        "source": "website",
+        "status": "converted",
+        "name": "Rajesh Kumar",
+        "email": "rajesh.kumar@techcorp.in",
+        "phone": "+919876543210",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-010",
+      "evt-011",
+      "evt-012",
+      "evt-013"
+    ],
+    "score": {
+      "score": 80,
+      "tier": "High",
+      "breakdown": {
+        "form_submission": 20,
+        "email_clicks": 0,
+        "email_opens": 0,
+        "campaign_clicks": 0,
+        "phone_provided": 10,
+        "qualified": 20,
+        "converted": 20,
+        "interaction_density": 10
+      }
+    },
+    "first_seen": "2026-08-11T08:00:00.000Z",
+    "last_seen": "2026-08-14T15:00:00.000Z"
+  },
+  {
+    "lead_id": "lead-303",
+    "canonical_email": "elena.rostova@globalfin.eu",
+    "phone": "+442079460991",
+    "name": "Elena Rostova",
+    "current_state": "Qualified",
+    "attributed_campaign": "seo-growth-2026",
+    "attributed_source": "organic_search",
+    "attribution_explanation": {
+      "selected_campaign": "seo-growth-2026",
+      "selected_source": "organic_search",
+      "rule_applied": "Rule 3: Source Precedence Tie-Break",
+      "reason": "No conversion campaign existed. Competing campaigns had identical interaction timestamp 2026-08-12T10:00:00.000Z. Selected \"seo-growth-2026\" because source \"organic_search\" has higher precedence in [organic_search > paid_search > email > social > website > manual].",
+      "candidate_campaigns": [
+        "google-ads-q3",
+        "seo-growth-2026"
+      ],
+      "qualifying_event_id": "evt-023"
+    },
+    "duplicate_count": 3,
+    "interaction_count": 4,
+    "has_conflict": false,
+    "conflicts": [],
+    "timeline": [
+      {
+        "event_id": "evt-021",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-12T10:00:00.000Z",
+        "campaign": "seo-growth-2026",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Elena Rostova",
+        "email": "elena.rostova@globalfin.eu",
+        "phone": "+442079460991",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-020",
+        "event_type": "campaign_click",
+        "timestamp": "2026-08-12T10:00:00.000Z",
+        "campaign": "google-ads-q3",
+        "source": "paid_search",
+        "status": "new",
+        "name": "Elena Rostova",
+        "email": "elena.rostova@globalfin.eu",
+        "phone": "+442079460991",
+        "is_late_arrival": true
+      },
+      {
+        "event_id": "evt-022",
+        "event_type": "form_submission",
+        "timestamp": "2026-08-12T10:05:00.000Z",
+        "campaign": "",
+        "source": "website",
+        "status": "new",
+        "name": "Elena Rostova",
+        "email": "elena.rostova@globalfin.eu",
+        "phone": "+442079460991",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-023",
+        "event_type": "qualified",
+        "timestamp": "2026-08-13T14:00:00.000Z",
+        "campaign": "",
+        "source": "manual",
+        "status": "qualified",
+        "name": "Elena Rostova",
+        "email": "elena.rostova@globalfin.eu",
+        "phone": "+442079460991",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-020",
+      "evt-021",
+      "evt-022",
+      "evt-023"
+    ],
+    "score": {
+      "score": 75,
+      "tier": "High",
+      "breakdown": {
+        "form_submission": 20,
+        "email_clicks": 0,
+        "email_opens": 0,
+        "campaign_clicks": 15,
+        "phone_provided": 10,
+        "qualified": 20,
+        "converted": 0,
+        "interaction_density": 10
+      }
+    },
+    "first_seen": "2026-08-12T10:00:00.000Z",
+    "last_seen": "2026-08-13T14:00:00.000Z"
+  },
+  {
+    "lead_id": "lead-404",
+    "canonical_email": "marcus.vance@apexlogistics.com",
+    "phone": "+14155550143",
+    "name": "Marcus Vance",
+    "current_state": "New",
+    "attributed_campaign": "seo-campaign-alpha",
+    "attributed_source": "organic_search",
+    "attribution_explanation": {
+      "selected_campaign": "seo-campaign-alpha",
+      "selected_source": "organic_search",
+      "rule_applied": "Rule 4: Lexicographic Campaign Tie-Breaker",
+      "reason": "No conversion campaign existed. Competing campaigns (seo-campaign-alpha, seo-campaign-beta) were tied at timestamp 2026-08-15T12:00:00.000Z with identical source precedence (organic_search). Tie was deterministically broken by selecting lexicographically smallest campaign ID \"seo-campaign-alpha\".",
+      "candidate_campaigns": [
+        "seo-campaign-alpha",
+        "seo-campaign-beta"
+      ]
+    },
+    "duplicate_count": 1,
+    "interaction_count": 2,
+    "has_conflict": false,
+    "conflicts": [],
+    "timeline": [
+      {
+        "event_id": "evt-030",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-15T12:00:00.000Z",
+        "campaign": "seo-campaign-beta",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Marcus Vance",
+        "email": "marcus.vance@apexlogistics.com",
+        "phone": "+14155550143",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-031",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-15T12:00:00.000Z",
+        "campaign": "seo-campaign-alpha",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Marcus Vance",
+        "email": "marcus.vance@apexlogistics.com",
+        "phone": "+14155550143",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-030",
+      "evt-031"
+    ],
+    "score": {
+      "score": 15,
+      "tier": "Low",
+      "breakdown": {
+        "form_submission": 0,
+        "email_clicks": 0,
+        "email_opens": 0,
+        "campaign_clicks": 0,
+        "phone_provided": 10,
+        "qualified": 0,
+        "converted": 0,
+        "interaction_density": 5
+      }
+    },
+    "first_seen": "2026-08-15T12:00:00.000Z",
+    "last_seen": "2026-08-15T12:00:00.000Z"
+  },
+  {
+    "lead_id": "lead-505",
+    "canonical_email": "david.chen@synapse.ai",
+    "phone": "+16505550188",
+    "name": "David Chen",
+    "current_state": "Lost",
+    "attributed_campaign": "self-serve-signup",
+    "attributed_source": "website",
+    "attribution_explanation": {
+      "selected_campaign": "self-serve-signup",
+      "selected_source": "website",
+      "rule_applied": "Rule 1: Conversion Event Campaign",
+      "reason": "Conversion event evt-042 was directly associated with campaign \"self-serve-signup\". Under Rule 1, the converting touchpoint takes primary attribution.",
+      "candidate_campaigns": [
+        "self-serve-signup",
+        "twitter-ai-launch"
+      ],
+      "conversion_event_id": "evt-042"
+    },
+    "duplicate_count": 2,
+    "interaction_count": 3,
+    "has_conflict": true,
+    "conflicts": [
+      {
+        "event_id": "evt-042",
+        "attempted_transition": "Lost -> Converted",
+        "current_state": "Lost",
+        "timestamp": "2026-08-08T18:00:00.000Z",
+        "reason": "Invalid state transition from \"Lost\" to \"Converted\" attempted by event evt-042 (converted at 2026-08-08T18:00:00.000Z). State retained as \"Lost\"."
+      }
+    ],
+    "timeline": [
+      {
+        "event_id": "evt-040",
+        "event_type": "form_submission",
+        "timestamp": "2026-08-05T14:00:00.000Z",
+        "campaign": "twitter-ai-launch",
+        "source": "social",
+        "status": "new",
+        "name": "David Chen",
+        "email": "david.chen@synapse.ai",
+        "phone": "+16505550188",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-041",
+        "event_type": "lost",
+        "timestamp": "2026-08-06T10:00:00.000Z",
+        "campaign": "",
+        "source": "manual",
+        "status": "lost",
+        "name": "David Chen",
+        "email": "david.chen@synapse.ai",
+        "phone": "+16505550188",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-042",
+        "event_type": "converted",
+        "timestamp": "2026-08-08T18:00:00.000Z",
+        "campaign": "self-serve-signup",
+        "source": "website",
+        "status": "converted",
+        "name": "David Chen",
+        "email": "david.chen@synapse.ai",
+        "phone": "+16505550188",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-040",
+      "evt-041",
+      "evt-042"
+    ],
+    "score": {
+      "score": 35,
+      "tier": "Low",
+      "breakdown": {
+        "form_submission": 20,
+        "email_clicks": 0,
+        "email_opens": 0,
+        "campaign_clicks": 0,
+        "phone_provided": 10,
+        "qualified": 0,
+        "converted": 0,
+        "interaction_density": 5
+      }
+    },
+    "first_seen": "2026-08-05T14:00:00.000Z",
+    "last_seen": "2026-08-08T18:00:00.000Z"
+  },
+  {
+    "lead_id": "lead-606",
+    "canonical_email": "casual.browser@example.com",
+    "phone": "",
+    "name": "Casual Visitor",
+    "current_state": "New",
+    "attributed_campaign": "seo-growth-2026",
+    "attributed_source": "organic_search",
+    "attribution_explanation": {
+      "selected_campaign": "seo-growth-2026",
+      "selected_source": "organic_search",
+      "rule_applied": "Rule 2: Pre-Qualification Interaction",
+      "reason": "No conversion or qualification campaign existed. Campaign \"seo-growth-2026\" was the latest active touchpoint in the journey (event evt-051 at 2026-08-02T15:30:00.000Z).",
+      "candidate_campaigns": [
+        "seo-growth-2026"
+      ]
+    },
+    "duplicate_count": 1,
+    "interaction_count": 2,
+    "has_conflict": false,
+    "conflicts": [],
+    "timeline": [
+      {
+        "event_id": "evt-050",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-01T11:00:00.000Z",
+        "campaign": "seo-growth-2026",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Casual Visitor",
+        "email": "casual.browser@example.com",
+        "phone": "",
+        "is_late_arrival": false
+      },
+      {
+        "event_id": "evt-051",
+        "event_type": "page_visit",
+        "timestamp": "2026-08-02T15:30:00.000Z",
+        "campaign": "seo-growth-2026",
+        "source": "organic_search",
+        "status": "new",
+        "name": "Casual Visitor",
+        "email": "casual.browser@example.com",
+        "phone": "",
+        "is_late_arrival": false
+      }
+    ],
+    "merged_event_ids": [
+      "evt-050",
+      "evt-051"
+    ],
+    "score": {
+      "score": 5,
+      "tier": "Low",
+      "breakdown": {
+        "form_submission": 0,
+        "email_clicks": 0,
+        "email_opens": 0,
+        "campaign_clicks": 0,
+        "phone_provided": 0,
+        "qualified": 0,
+        "converted": 0,
+        "interaction_density": 5
+      }
+    },
+    "first_seen": "2026-08-01T11:00:00.000Z",
+    "last_seen": "2026-08-02T15:30:00.000Z"
+  }
+]

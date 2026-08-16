@@ -1,0 +1,454 @@
+[
+  {
+    "id": "audit-attr-lead-606",
+    "lead_id": "lead-606",
+    "event_id": "evt-051",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-growth-2026",
+    "candidate_campaigns": [
+      "seo-growth-2026"
+    ],
+    "reason": "No conversion or qualification campaign existed. Campaign \"seo-growth-2026\" was the latest active touchpoint in the journey (event evt-051 at 2026-08-02T15:30:00.000Z).",
+    "timestamp": "2026-08-02T15:30:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-051",
+    "lead_id": "lead-606",
+    "event_id": "evt-051",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-growth-2026",
+    "candidate_campaigns": [
+      "seo-growth-2026"
+    ],
+    "reason": "Merged with canonical lead lead-606 (Normalized email matched casual.browser@example.com)",
+    "timestamp": "2026-08-02T15:30:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-041",
+    "lead_id": "lead-505",
+    "event_id": "evt-041",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Merged with canonical lead lead-505 (Normalized email matched david.chen@synapse.ai)",
+    "timestamp": "2026-08-06T10:00:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-041",
+    "lead_id": "lead-505",
+    "event_id": "evt-041",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "New",
+    "new_state": "Lost",
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Lead lifecycle state advanced from \"New\" to \"Lost\" triggered by event evt-041 (lost).",
+    "timestamp": "2026-08-06T10:00:00.000Z"
+  },
+  {
+    "id": "audit-attr-lead-505",
+    "lead_id": "lead-505",
+    "event_id": "evt-042",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "self-serve-signup",
+    "candidate_campaigns": [
+      "self-serve-signup",
+      "twitter-ai-launch"
+    ],
+    "reason": "Conversion event evt-042 was directly associated with campaign \"self-serve-signup\". Under Rule 1, the converting touchpoint takes primary attribution.",
+    "timestamp": "2026-08-08T18:00:00.000Z"
+  },
+  {
+    "id": "audit-conflict-evt-042",
+    "lead_id": "lead-505",
+    "event_id": "evt-042",
+    "decision_type": "STATE_CONFLICT",
+    "previous_state": "Lost",
+    "new_state": "Lost",
+    "selected_campaign": "self-serve-signup",
+    "candidate_campaigns": [
+      "self-serve-signup"
+    ],
+    "reason": "Invalid state transition from \"Lost\" to \"Converted\" attempted by event evt-042 (converted at 2026-08-08T18:00:00.000Z). State retained as \"Lost\".",
+    "timestamp": "2026-08-08T18:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-042",
+    "lead_id": "lead-505",
+    "event_id": "evt-042",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "self-serve-signup",
+    "candidate_campaigns": [
+      "self-serve-signup"
+    ],
+    "reason": "Merged with canonical lead lead-505 (Normalized email matched david.chen@synapse.ai)",
+    "timestamp": "2026-08-08T18:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-002",
+    "lead_id": "lead-101",
+    "event_id": "evt-002",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "google-ads-q3",
+    "candidate_campaigns": [
+      "google-ads-q3"
+    ],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-10T09:15:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-003",
+    "lead_id": "lead-101",
+    "event_id": "evt-003",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "google-ads-q3",
+    "candidate_campaigns": [
+      "google-ads-q3"
+    ],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-10T09:20:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-011",
+    "lead_id": "lead-202",
+    "event_id": "evt-011",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "linkedin-lead-gen-apac",
+    "candidate_campaigns": [
+      "linkedin-lead-gen-apac"
+    ],
+    "reason": "Merged with canonical lead lead-202 (Normalized phone matched +919876543210)",
+    "timestamp": "2026-08-11T12:00:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-011",
+    "lead_id": "lead-202",
+    "event_id": "evt-011",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "New",
+    "new_state": "Contacted",
+    "selected_campaign": "linkedin-lead-gen-apac",
+    "candidate_campaigns": [
+      "linkedin-lead-gen-apac"
+    ],
+    "reason": "Lead lifecycle state advanced from \"New\" to \"Contacted\" triggered by event evt-011 (contacted).",
+    "timestamp": "2026-08-11T12:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-004",
+    "lead_id": "lead-101",
+    "event_id": "evt-004",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "nurture-enterprise-01",
+    "candidate_campaigns": [
+      "nurture-enterprise-01"
+    ],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-11T14:30:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-004",
+    "lead_id": "lead-101",
+    "event_id": "evt-004",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "New",
+    "new_state": "Contacted",
+    "selected_campaign": "nurture-enterprise-01",
+    "candidate_campaigns": [
+      "nurture-enterprise-01"
+    ],
+    "reason": "Lead lifecycle state advanced from \"New\" to \"Contacted\" triggered by event evt-004 (email_click).",
+    "timestamp": "2026-08-11T14:30:00.000Z"
+  },
+  {
+    "id": "audit-attr-lead-202",
+    "lead_id": "lead-202",
+    "event_id": "evt-012",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "linkedin-lead-gen-apac",
+    "candidate_campaigns": [
+      "linkedin-lead-gen-apac"
+    ],
+    "reason": "No conversion campaign existed. Campaign \"linkedin-lead-gen-apac\" was selected as the latest valid interaction before lead qualification (event evt-012 at 2026-08-12T09:30:00.000Z).",
+    "timestamp": "2026-08-12T09:30:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-012",
+    "lead_id": "lead-202",
+    "event_id": "evt-012",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "linkedin-lead-gen-apac",
+    "candidate_campaigns": [
+      "linkedin-lead-gen-apac"
+    ],
+    "reason": "Merged with canonical lead lead-202 (Normalized phone matched +919876543210)",
+    "timestamp": "2026-08-12T09:30:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-012",
+    "lead_id": "lead-202",
+    "event_id": "evt-012",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "Contacted",
+    "new_state": "Qualified",
+    "selected_campaign": "linkedin-lead-gen-apac",
+    "candidate_campaigns": [
+      "linkedin-lead-gen-apac"
+    ],
+    "reason": "Lead lifecycle state advanced from \"Contacted\" to \"Qualified\" triggered by event evt-012 (qualified).",
+    "timestamp": "2026-08-12T09:30:00.000Z"
+  },
+  {
+    "id": "audit-attr-lead-303",
+    "lead_id": "lead-303",
+    "event_id": "evt-021",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-growth-2026",
+    "candidate_campaigns": [
+      "google-ads-q3",
+      "seo-growth-2026"
+    ],
+    "reason": "No conversion campaign existed. Competing campaigns had identical interaction timestamp 2026-08-12T10:00:00.000Z. Selected \"seo-growth-2026\" because source \"organic_search\" has higher precedence in [organic_search > paid_search > email > social > website > manual].",
+    "timestamp": "2026-08-12T10:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-021",
+    "lead_id": "lead-303",
+    "event_id": "evt-021",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-growth-2026",
+    "candidate_campaigns": [
+      "seo-growth-2026"
+    ],
+    "reason": "Merged with canonical lead lead-303 (Normalized email matched elena.rostova@globalfin.eu)",
+    "timestamp": "2026-08-12T10:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-022",
+    "lead_id": "lead-303",
+    "event_id": "evt-022",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Merged with canonical lead lead-303 (Normalized email matched elena.rostova@globalfin.eu)",
+    "timestamp": "2026-08-12T10:05:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-005",
+    "lead_id": "lead-101",
+    "event_id": "evt-005",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-12T11:00:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-005",
+    "lead_id": "lead-101",
+    "event_id": "evt-005",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "Contacted",
+    "new_state": "Qualified",
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Lead lifecycle state advanced from \"Contacted\" to \"Qualified\" triggered by event evt-005 (qualified).",
+    "timestamp": "2026-08-12T11:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-023",
+    "lead_id": "lead-303",
+    "event_id": "evt-023",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Merged with canonical lead lead-303 (Normalized email matched elena.rostova@globalfin.eu)",
+    "timestamp": "2026-08-13T14:00:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-023",
+    "lead_id": "lead-303",
+    "event_id": "evt-023",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "New",
+    "new_state": "Qualified",
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Lead lifecycle state advanced from \"New\" to \"Qualified\" triggered by event evt-023 (qualified).",
+    "timestamp": "2026-08-13T14:00:00.000Z"
+  },
+  {
+    "id": "audit-attr-lead-101",
+    "lead_id": "lead-101",
+    "event_id": "evt-006",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "enterprise-checkout-summer",
+    "candidate_campaigns": [
+      "enterprise-checkout-summer",
+      "google-ads-q3",
+      "nurture-enterprise-01",
+      "random-newsletter",
+      "seo-growth-2026"
+    ],
+    "reason": "Conversion event evt-006 was directly associated with campaign \"enterprise-checkout-summer\". Under Rule 1, the converting touchpoint takes primary attribution.",
+    "timestamp": "2026-08-13T16:45:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-006",
+    "lead_id": "lead-101",
+    "event_id": "evt-006",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "enterprise-checkout-summer",
+    "candidate_campaigns": [
+      "enterprise-checkout-summer"
+    ],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-13T16:45:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-006",
+    "lead_id": "lead-101",
+    "event_id": "evt-006",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "Qualified",
+    "new_state": "Converted",
+    "selected_campaign": "enterprise-checkout-summer",
+    "candidate_campaigns": [
+      "enterprise-checkout-summer"
+    ],
+    "reason": "Lead lifecycle state advanced from \"Qualified\" to \"Converted\" triggered by event evt-006 (converted).",
+    "timestamp": "2026-08-13T16:45:00.000Z"
+  },
+  {
+    "id": "audit-conflict-evt-007",
+    "lead_id": "lead-101",
+    "event_id": "evt-007",
+    "decision_type": "STATE_CONFLICT",
+    "previous_state": "Converted",
+    "new_state": "Converted",
+    "selected_campaign": "random-newsletter",
+    "candidate_campaigns": [
+      "random-newsletter"
+    ],
+    "reason": "Invalid state regression from \"Converted\" to \"New\" attempted by event evt-007 (page_visit at 2026-08-14T10:00:00.000Z). State retained as \"Converted\".",
+    "timestamp": "2026-08-14T10:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-007",
+    "lead_id": "lead-101",
+    "event_id": "evt-007",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "random-newsletter",
+    "candidate_campaigns": [
+      "random-newsletter"
+    ],
+    "reason": "Merged with canonical lead lead-101 (Normalized email matched sarah.connor@cyberdyne.org)",
+    "timestamp": "2026-08-14T10:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-013",
+    "lead_id": "lead-202",
+    "event_id": "evt-013",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Merged with canonical lead lead-202 (Normalized phone matched +919876543210)",
+    "timestamp": "2026-08-14T15:00:00.000Z"
+  },
+  {
+    "id": "audit-state-evt-013",
+    "lead_id": "lead-202",
+    "event_id": "evt-013",
+    "decision_type": "STATE_CHANGE",
+    "previous_state": "Qualified",
+    "new_state": "Converted",
+    "selected_campaign": null,
+    "candidate_campaigns": [],
+    "reason": "Lead lifecycle state advanced from \"Qualified\" to \"Converted\" triggered by event evt-013 (converted).",
+    "timestamp": "2026-08-14T15:00:00.000Z"
+  },
+  {
+    "id": "audit-attr-lead-404",
+    "lead_id": "lead-404",
+    "event_id": "evt-031",
+    "decision_type": "ATTRIBUTION_SELECTION",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-campaign-alpha",
+    "candidate_campaigns": [
+      "seo-campaign-alpha",
+      "seo-campaign-beta"
+    ],
+    "reason": "No conversion campaign existed. Competing campaigns (seo-campaign-alpha, seo-campaign-beta) were tied at timestamp 2026-08-15T12:00:00.000Z with identical source precedence (organic_search). Tie was deterministically broken by selecting lexicographically smallest campaign ID \"seo-campaign-alpha\".",
+    "timestamp": "2026-08-15T12:00:00.000Z"
+  },
+  {
+    "id": "audit-dup-evt-031",
+    "lead_id": "lead-404",
+    "event_id": "evt-031",
+    "decision_type": "DUPLICATE_MERGE",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-campaign-alpha",
+    "candidate_campaigns": [
+      "seo-campaign-alpha"
+    ],
+    "reason": "Merged with canonical lead lead-404 (Normalized email matched marcus.vance@apexlogistics.com)",
+    "timestamp": "2026-08-15T12:00:00.000Z"
+  },
+  {
+    "id": "audit-tie-lead-404",
+    "lead_id": "lead-404",
+    "event_id": "evt-031",
+    "decision_type": "TIE_BREAK",
+    "previous_state": null,
+    "new_state": null,
+    "selected_campaign": "seo-campaign-alpha",
+    "candidate_campaigns": [
+      "seo-campaign-alpha",
+      "seo-campaign-beta"
+    ],
+    "reason": "Lexicographical tie-breaker applied between tied candidates [seo-campaign-alpha, seo-campaign-beta]. Selected \"seo-campaign-alpha\".",
+    "timestamp": "2026-08-15T12:00:00.000Z"
+  }
+]
