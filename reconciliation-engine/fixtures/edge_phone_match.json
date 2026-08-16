@@ -1,0 +1,4 @@
+[
+  {"event_id": "evt-301", "lead_id": "lead-030", "email": "", "phone": "+919876543210", "name": "Phone Match", "source": "manual", "campaign": "import-batch-1", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-302", "lead_id": "lead-031", "email": "", "phone": "+919876543210", "name": "Phone Match", "source": "manual", "campaign": "import-batch-2", "event_type": "contacted", "timestamp": "2026-08-02T08:00:00Z", "status": "contacted"}
+]

@@ -1,0 +1,5 @@
+[
+  {"event_id": "evt-101", "lead_id": "lead-010", "email": "late@example.com", "name": "Late Arrival", "source": "paid_search", "campaign": "ppc-late", "event_type": "form_submission", "timestamp": "2026-08-15T10:00:00Z", "status": "new"},
+  {"event_id": "evt-102", "lead_id": "lead-010", "email": "late@example.com", "name": "Late Arrival", "source": "paid_search", "campaign": "ppc-late", "event_type": "converted", "timestamp": "2026-08-16T10:00:00Z", "status": "converted"},
+  {"event_id": "evt-103", "lead_id": "lead-010", "email": "late@example.com", "name": "Late Arrival", "source": "organic_search", "campaign": "seo-early", "event_type": "page_visit", "timestamp": "2026-08-10T08:00:00Z", "status": "new"}
+]

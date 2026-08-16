@@ -1,0 +1,6 @@
+[
+  {"event_id": "evt-401", "lead_id": "lead-040", "email": "tie@example.com", "name": "Tie Break", "source": "social", "campaign": "zzz-social", "event_type": "campaign_click", "timestamp": "2026-08-05T12:00:00Z", "status": "new"},
+  {"event_id": "evt-402", "lead_id": "lead-040", "email": "tie@example.com", "name": "Tie Break", "source": "organic_search", "campaign": "aaa-seo", "event_type": "campaign_click", "timestamp": "2026-08-05T12:00:00Z", "status": "new"},
+  {"event_id": "evt-403", "lead_id": "lead-041", "email": "tie2@example.com", "name": "Tie Break Two", "source": "email", "campaign": "email-x", "event_type": "campaign_click", "timestamp": "2026-08-06T12:00:00Z", "status": "new"},
+  {"event_id": "evt-404", "lead_id": "lead-041", "email": "tie2@example.com", "name": "Tie Break Two", "source": "email", "campaign": "email-a", "event_type": "campaign_click", "timestamp": "2026-08-06T12:00:00Z", "status": "new"}
+]

@@ -1,0 +1,13 @@
+[
+  {"event_id": "evt-501", "lead_id": "lead-050", "email": "invalid1@example.com", "name": "Invalid Transition A", "source": "website", "campaign": "web-01", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-502", "lead_id": "lead-050", "email": "invalid1@example.com", "name": "Invalid Transition A", "source": "website", "campaign": "web-01", "event_type": "qualified", "timestamp": "2026-08-02T08:00:00Z", "status": "qualified"},
+  {"event_id": "evt-503", "lead_id": "lead-050", "email": "invalid1@example.com", "name": "Invalid Transition A", "source": "website", "campaign": "web-01", "event_type": "converted", "timestamp": "2026-08-03T08:00:00Z", "status": "converted"},
+  {"event_id": "evt-504", "lead_id": "lead-050", "email": "invalid1@example.com", "name": "Invalid Transition A", "source": "website", "campaign": "web-01", "event_type": "form_submission", "timestamp": "2026-08-04T08:00:00Z", "status": "new"},
+
+  {"event_id": "evt-601", "lead_id": "lead-060", "email": "invalid2@example.com", "name": "Invalid Transition B", "source": "website", "campaign": "web-02", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-602", "lead_id": "lead-060", "email": "invalid2@example.com", "name": "Invalid Transition B", "source": "website", "campaign": "web-02", "event_type": "qualified", "timestamp": "2026-08-02T08:00:00Z", "status": "qualified"},
+  {"event_id": "evt-603", "lead_id": "lead-060", "email": "invalid2@example.com", "name": "Invalid Transition B", "source": "website", "campaign": "web-02", "event_type": "form_submission", "timestamp": "2026-08-03T08:00:00Z", "status": "new"},
+
+  {"event_id": "evt-701", "lead_id": "lead-070", "email": "invalid3@example.com", "name": "Invalid Transition C", "source": "website", "campaign": "web-03", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "lost"},
+  {"event_id": "evt-702", "lead_id": "lead-070", "email": "invalid3@example.com", "name": "Invalid Transition C", "source": "website", "campaign": "web-03", "event_type": "converted", "timestamp": "2026-08-02T08:00:00Z", "status": "converted"}
+]

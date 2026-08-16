@@ -1,0 +1,7 @@
+[
+  {"event_id": "evt-001", "lead_id": "lead-001", "email": "user@example.com", "name": "Example User", "source": "organic_search", "campaign": "seo-campaign-01", "event_type": "form_submission", "timestamp": "2026-08-15T10:30:00Z", "status": "new"},
+  {"event_id": "evt-002", "lead_id": "lead-001", "email": "user@example.com", "name": "Example User", "source": "email", "campaign": "nurture-01", "event_type": "contacted", "timestamp": "2026-08-16T09:00:00Z", "status": "contacted"},
+  {"event_id": "evt-003", "lead_id": "lead-001", "email": "user@example.com", "name": "Example User", "source": "paid_search", "campaign": "ppc-02", "event_type": "qualified", "timestamp": "2026-08-17T09:00:00Z", "status": "qualified"},
+  {"event_id": "evt-004", "lead_id": "lead-001", "email": "user@example.com", "name": "Example User", "source": "paid_search", "campaign": "ppc-02", "event_type": "converted", "timestamp": "2026-08-18T09:00:00Z", "status": "converted"},
+  {"event_id": "evt-005", "lead_id": "lead-002", "email": "user@example.com", "name": "Example User Dup", "source": "social", "campaign": "social-retarget", "event_type": "page_visit", "timestamp": "2026-08-14T08:00:00Z", "status": "new"}
+]

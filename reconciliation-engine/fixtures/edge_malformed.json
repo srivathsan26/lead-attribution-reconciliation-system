@@ -1,0 +1,8 @@
+[
+  {"event_id": "", "lead_id": "lead-080", "email": "malformed1@example.com", "name": "No Event Id", "source": "website", "campaign": "web-04", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-802", "lead_id": "", "email": "", "phone": "", "name": "No Identifier", "source": "website", "campaign": "web-04", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-803", "lead_id": "lead-081", "email": "badtime@example.com", "name": "Bad Timestamp", "source": "website", "campaign": "web-04", "event_type": "form_submission", "timestamp": "not-a-real-timestamp", "status": "new"},
+  {"event_id": "evt-804", "lead_id": "lead-082", "email": "badsource@example.com", "name": "Bad Source", "source": "tiktok_ads", "campaign": "web-04", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-805", "lead_id": "lead-083", "email": "badtype@example.com", "name": "Bad Event Type", "source": "website", "campaign": "web-04", "event_type": "teleported", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-806", "lead_id": "lead-084", "email": "valid@example.com", "name": "Valid Control", "source": "website", "campaign": "web-04", "event_type": "form_submission", "timestamp": "2026-08-01T08:00:00Z", "status": "new"}
+]

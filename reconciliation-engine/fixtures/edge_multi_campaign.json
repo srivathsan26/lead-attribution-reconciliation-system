@@ -1,0 +1,6 @@
+[
+  {"event_id": "evt-201", "lead_id": "lead-020", "email": "multi@example.com", "name": "Multi Campaign", "source": "social", "campaign": "social-a", "event_type": "page_visit", "timestamp": "2026-08-01T08:00:00Z", "status": "new"},
+  {"event_id": "evt-202", "lead_id": "lead-020", "email": "multi@example.com", "name": "Multi Campaign", "source": "email", "campaign": "email-b", "event_type": "email_click", "timestamp": "2026-08-03T08:00:00Z", "status": "new"},
+  {"event_id": "evt-203", "lead_id": "lead-020", "email": "multi@example.com", "name": "Multi Campaign", "source": "organic_search", "campaign": "seo-c", "event_type": "form_submission", "timestamp": "2026-08-05T08:00:00Z", "status": "new"},
+  {"event_id": "evt-204", "lead_id": "lead-020", "email": "multi@example.com", "name": "Multi Campaign", "source": "organic_search", "campaign": "seo-c", "event_type": "qualified", "timestamp": "2026-08-07T08:00:00Z", "status": "qualified"}
+]
