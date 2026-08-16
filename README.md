@@ -12,3 +12,14 @@
    python -m pytest tests/ -v
    python -m engine.pipeline fixtures
 ```
+## Quick Start (Web Dashboard)
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Open **http://localhost:3000** in your browser.
